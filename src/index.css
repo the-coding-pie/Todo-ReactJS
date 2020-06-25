@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #F00000, #DC281E);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+form {
+  margin: 30px 0px 40px;
+  display: flex;
+}
+
+form.search input[type="text"]{
+  border-radius: 7px;
+  border: none;
+  padding: 8px 10px;
+  width: 250px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+form.search button {
+  border: none;
+  background-color: blue;
+  font-size: 1.2rem;
+  padding: 7px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+form.search button:hover {
+  cursor: pointer;
+  background-color: chartreuse;
+}
+
+li.todo {
+  background-color: #fff;
+  text-align: left;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+li:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+input[type="checkbox"] {
+  margin-right: 7px;
+}
+
+button[name="delete"] {
+  background-color: crimson;
+  border: none;
+  font-size: 1.1rem;
+  padding: 2px 5px;
+  font-weight: 550;
+  float: right;
+  border-radius: 7px;
+}
+
+button[name="delete"]:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  outline: none;
+  border: none;
+}
+
+button[name="delete"]::after {
+  clear: both;
+}
+
